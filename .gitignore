@@ -1,15 +1,31 @@
-*.class
+# Operating System Files
 
-# BlueJ files
-*.ctxt
+*.DS_Store
+Thumbs.db
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Build Files #
 
-# Package Files #
-*.jar
-*.war
-*.ear
+bin
+target
+build/
+.gradle
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Eclipse Project Files #
+
+.classpath
+.project
+.settings
+
+# IntelliJ IDEA Files #
+
+*.iml
+*.ipr
+*.iws
+*.idea
+
+# Test files
+
+accessingdataneo4j.db
+dependency-reduced-pom.xml
+out
+README.html
