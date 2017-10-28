@@ -1,12 +1,12 @@
-package org.chvrga.springgames;
+package org.chvrga;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringGamesApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringGamesApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
