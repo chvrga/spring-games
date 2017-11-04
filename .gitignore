@@ -32,3 +32,4 @@ README.html
 .DS_Store
 *.class
 *.jar
+codecov.sh
