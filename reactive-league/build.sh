@@ -30,6 +30,4 @@ if [ $ret -ne 0 ]; then
 fi
 rm -rf build
 
-bash <(curl -s https://codecov.io/bash) 
-
 exit
