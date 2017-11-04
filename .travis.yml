@@ -6,3 +6,5 @@ services:
 - mongodb
 script:
 - test/run.sh
+after_success:
+- "bash <(curl -s https://codecov.io/bash)"
