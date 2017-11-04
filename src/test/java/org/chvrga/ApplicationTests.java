@@ -54,14 +54,14 @@ public class ApplicationTests {
 	@Test
 	public void shouldReturnRepositoryIndex() throws Exception {
 
-		mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk()).andExpect(
+		mockMvc.perform(get("/api")).andDo(print()).andExpect(status().isOk()).andExpect(
 				jsonPath("$._links.people").exists());
 	}
 
 	@Test
 	public void shouldCreateEntity() throws Exception {
 
-		mockMvc.perform(post("/people").content(
+		mockMvc.perform(post("/api/people").content(
 				"{\"firstName\": \"Frodo\", \"lastName\":\"Baggins\"}")).andExpect(
 						status().isCreated()).andExpect(
 								header().string("Location", containsString("people/")));
@@ -70,7 +70,7 @@ public class ApplicationTests {
 	@Test
 	public void shouldRetrieveEntity() throws Exception {
 
-		MvcResult mvcResult = mockMvc.perform(post("/people").content(
+		MvcResult mvcResult = mockMvc.perform(post("/api/people").content(
 				"{\"firstName\": \"Frodo\", \"lastName\":\"Baggins\"}")).andExpect(
 						status().isCreated()).andReturn();
 
@@ -83,12 +83,12 @@ public class ApplicationTests {
 	@Test
 	public void shouldQueryEntity() throws Exception {
 
-		mockMvc.perform(post("/people").content(
+		mockMvc.perform(post("/api/people").content(
 				"{ \"firstName\": \"Frodo\", \"lastName\":\"Baggins\"}")).andExpect(
 						status().isCreated());
 
 		mockMvc.perform(
-				get("/people/search/findByLastName?name={name}", "Baggins")).andExpect(
+				get("/api/people/search/findByLastName?name={name}", "Baggins")).andExpect(
 						status().isOk()).andExpect(
 								jsonPath("$._embedded.people[0].firstName").value(
 										"Frodo"));
@@ -97,7 +97,7 @@ public class ApplicationTests {
 	@Test
 	public void shouldUpdateEntity() throws Exception {
 
-		MvcResult mvcResult = mockMvc.perform(post("/people").content(
+		MvcResult mvcResult = mockMvc.perform(post("/api/people").content(
 				"{\"firstName\": \"Frodo\", \"lastName\":\"Baggins\"}")).andExpect(
 						status().isCreated()).andReturn();
 
@@ -115,7 +115,7 @@ public class ApplicationTests {
 	@Test
 	public void shouldPartiallyUpdateEntity() throws Exception {
 
-		MvcResult mvcResult = mockMvc.perform(post("/people").content(
+		MvcResult mvcResult = mockMvc.perform(post("/api/people").content(
 				"{\"firstName\": \"Frodo\", \"lastName\":\"Baggins\"}")).andExpect(
 						status().isCreated()).andReturn();
 
@@ -133,7 +133,7 @@ public class ApplicationTests {
 	@Test
 	public void shouldDeleteEntity() throws Exception {
 
-		MvcResult mvcResult = mockMvc.perform(post("/people").content(
+		MvcResult mvcResult = mockMvc.perform(post("/api/people").content(
 				"{ \"firstName\": \"Bilbo\", \"lastName\":\"Baggins\"}")).andExpect(
 						status().isCreated()).andReturn();
 
