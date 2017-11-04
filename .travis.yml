@@ -5,6 +5,6 @@ jdk:
 services:
 - mongodb
 script:
-- build/run.sh
+- build_all/run.sh
 after_success:
 - "bash <(curl -s https://codecov.io/bash)"
