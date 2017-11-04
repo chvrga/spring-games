@@ -8,6 +8,7 @@
 
 [![Build Status](https://travis-ci.org/chvrga/spring-games.svg?branch=master)](https://travis-ci.org/chvrga/spring-games)
 [![codecov](https://codecov.io/gh/chvrga/spring-games/branch/master/graph/badge.svg)](https://codecov.io/gh/chvrga/spring-games)
+[![SonarQube](https://img.shields.io/badge/sonar-ok-green.svg)](https://sonarcloud.io/dashboard?id=org.chvrga.spring-games%3Areactive-league)
 
 
 ..keep it clean:
