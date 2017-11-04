@@ -1,8 +1,29 @@
-# Spring Samples created following various guides 
+# Spring Samples [created following various guides]
+* reactive-league (active)
+* test-modules
+*
+*
+
+## ractive-league
+
+[![Build Status](https://travis-ci.org/chvrga/spring-games.svg?branch=master)](https://travis-ci.org/chvrga/spring-games)
+[![codecov](https://codecov.io/gh/chvrga/spring-games/branch/master/graph/badge.svg)](https://codecov.io/gh/chvrga/spring-games)
+
+..keep it clean:
+```
+mvn clean install -Pqulice
+```
 
 
-### A List of Spring Guides
-The following guides may also be helpful:
+### TODO: 
+[Checkstyle](https://en.wikipedia.org/wiki/Checkstyle) as a static code analyze tool with
+[checks list](http://checkstyle.sourceforge.net/checks.html) in GitHub precommits.
+
+
+
+
+
+## A List of Spring Guides
 
 * https://spring.io/guides/gs/accessing-data-rest/[Accessing JPA Data with REST]
 * https://spring.io/guides/gs/accessing-gemfire-data-rest/[Accessing Gemfire Data with REST]
@@ -18,3 +39,4 @@ The following guides may also be helpful:
 * https://spring.io/guides/gs/testing-restdocs/[Creating API Documentation with Restdocs]
 * https://spring.io/guides/gs/rest-service-cors/[Enabling Cross Origin Requests for a RESTful Web Service]
 * https://spring.io/guides/gs/rest-hateoas/[Building a Hypermedia-Driven RESTful Web Service]
+
