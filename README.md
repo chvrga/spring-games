@@ -1,13 +1,14 @@
 # Spring Samples [created following various guides]
+* sping-sample-*
+* webfundamentals
 * reactive-league (active)
-* test-modules
-*
-*
+* test-modules (just a try run)
 
 ## ractive-league
 
 [![Build Status](https://travis-ci.org/chvrga/spring-games.svg?branch=master)](https://travis-ci.org/chvrga/spring-games)
 [![codecov](https://codecov.io/gh/chvrga/spring-games/branch/master/graph/badge.svg)](https://codecov.io/gh/chvrga/spring-games)
+
 
 ..keep it clean:
 ```
@@ -23,7 +24,7 @@ mvn clean install -Pqulice
 
 
 
-## A List of Spring Guides
+## A List of Spring Guides (for the future)
 
 * https://spring.io/guides/gs/accessing-data-rest/[Accessing JPA Data with REST]
 * https://spring.io/guides/gs/accessing-gemfire-data-rest/[Accessing Gemfire Data with REST]
