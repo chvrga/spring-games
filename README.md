@@ -1,10 +1,10 @@
-# Spring Samples [created following various guides]
+## Spring Samples [created following various guides]
 * sping-sample-*
 * webfundamentals
-* reactive-league (active)
+* *reactive-league (active)*
 * test-modules (just a try run)
 
-## ractive-league
+# ractive-league
 
 [![Build Status](https://travis-ci.org/chvrga/spring-games.svg?branch=master)](https://travis-ci.org/chvrga/spring-games)
 [![codecov](https://codecov.io/gh/chvrga/spring-games/branch/master/graph/badge.svg)](https://codecov.io/gh/chvrga/spring-games)
